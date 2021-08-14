@@ -9,14 +9,10 @@
  */
 void complex_from_mod_arg(double m, double arg, complex *c3)
 {
-    complex var;
-	double x = 0, y = 0;
+complex var;
 
-	x = m * cos(arg);
-	y = m * sin(arg);
-
-	var.re = x;
-	var.im = y;
+	var.re  = m * cos(arg);
+	var.im = m * sin(arg);
 
 	*c3 = var;
 }
